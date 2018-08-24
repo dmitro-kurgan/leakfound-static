@@ -1,0 +1,61 @@
+section.contacts
+	.container
+		.row
+			.col-sm-6
+				.contacts_left
+					h2 
+						span
+							| contact us
+						br
+						| Send a message
+					form
+						.row
+							.form-group.col-sm-6
+								label(for='name') Name
+								input.form-control#name(type='text', name='name', placeholder='Name', required)
+							.form-group.col-sm-6
+								label(for='email') E-mail
+								input.form-control#email(type='text', name='email', placeholder='E-mail', required)
+						.form-group
+							label(for='message') Message
+							textarea.form-control#message(type='text', name='name', placeholder='Message', rows='5', required)
+						button(type='submit').btn Send a message
+			.col-sm-6
+				.contacts_right
+					h2 
+						span
+							| contact us
+						br
+						| contact information
+					p.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at aliquam lectus. Proin dictum dapibus leo, eu pharetra dui. In aliquet magna.
+					ul.address-list.clearfix
+						li.col-sm-6
+							h3 Address
+							p
+								| 20058 Ventura Blvd #332 
+								br
+								| Woodland Hills, CA 91364
+						li.col-sm-6
+							h3 Phone
+							a(href="tel:+18888668007") +1(888)-866-8007
+						li.col-sm-6
+							h3 E-mail
+							a(href="mailto:info@LeakFound.com") info@LeakFound.com
+						li.col-sm-6
+							h3 Working hours
+							p.
+								Mon. - Frie. 09 a/m - 20 p/m
+					ul.social-list
+						li
+							a(href="#") Instagram
+								span.fa.fa-instagram
+						li
+							a(href="#") Facebook
+								span.fa.fa-facebook
+						li
+							a(href="#") Twitter
+								span.fa.fa-twitter
+						li
+							a(href="#") YouTube
+								span.fa.fa-youtube-play

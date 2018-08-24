@@ -1,0 +1,142 @@
+extends ./templates/base
+
+block title
+	title Blog
+block main
+	.wrapper.wrapper--blog
+		include ./templates/header 
+		.content.content--blog
+			section.breadcrumb
+				.container
+					h1 Blog
+					ul
+						li
+							a(href='./') Home
+						li Blog
+			section.blog-pg
+				.container
+					.row
+						.col-xs-12.col-md-9.col-md-push-3
+							.blog-pg_right
+								.blog-pg_block
+									.row
+										.col-md-6
+											a(href="article.html").blog-pg_box
+												object
+													a.blog-pg_box_img(href=require("./components/images/photo-9.jpg"), data-fancybox="", style='background-image: url(' + require('./components/images/photo-9.jpg') + ')')
+														.blog-pg_box_inner
+															.blog-pg_box_zoom
+												.blog-pg_box_bottom.clearfix
+													.blog-pg_box_data Desember 11,2017
+													h3.blog-pg_box_name Integer quis massa lacus
+													p.blog-pg_box_txt.
+														Water damage is a problem that everyone who owns a property has faced at least once in their life. They know...
+													object
+														a(href="article.html").btn Read More
+										.col-md-6
+											a(href="article.html").blog-pg_box
+												object
+													a.blog-pg_box_img(href=require("./components/images/photo-7.jpg"), data-fancybox="", style='background-image: url(' + require('./components/images/photo-7.jpg') + ')')
+														.blog-pg_box_inner
+															.blog-pg_box_zoom
+												.blog-pg_box_bottom.clearfix
+													.blog-pg_box_data Desember 11,2017
+													h3.blog-pg_box_name Integer quis massa lacus
+													p.blog-pg_box_txt.
+														Water damage is a problem that everyone who owns a property has faced at least once in their life. They know...
+													object
+														a(href="article.html").btn Read More
+										.col-md-6
+											a(href="article.html").blog-pg_box
+												object
+													a.blog-pg_box_img(href=require("./components/images/photo-3.jpg"), data-fancybox="", style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+														.blog-pg_box_inner
+															.blog-pg_box_zoom
+												.blog-pg_box_bottom.clearfix
+													.blog-pg_box_data Desember 11,2017
+													h3.blog-pg_box_name Integer quis massa lacus
+													p.blog-pg_box_txt.
+														Water damage is a problem that everyone who owns a property has faced at least once in their life. They know...
+													object
+														a(href="article.html").btn Read More
+										.col-md-6
+											a(href="article.html").blog-pg_box
+												object
+													a.blog-pg_box_img(href=require("./components/images/photo-8.jpg"), data-fancybox="", style='background-image: url(' + require('./components/images/photo-8.jpg') + ')')
+														.blog-pg_box_inner
+															.blog-pg_box_zoom
+												.blog-pg_box_bottom.clearfix
+													.blog-pg_box_data Desember 11,2017
+													h3.blog-pg_box_name Integer quis massa lacus
+													p.blog-pg_box_txt.
+														Water damage is a problem that everyone who owns a property has faced at least once in their life. They know...
+													object
+														a(href="article.html").btn Read More
+								.blog-pg_pagination
+									.pagination-block
+										.pagination.loop-pagination
+											a.prev.page-numbers(href='#')
+												i.arrow.left
+											a.page-numbers(href='#') 1
+											span.page-numbers.current 2
+											a.page-numbers(href='#') 3
+											span.page-numbers.dots …
+											a.page-numbers(href='#') 10
+											a.next.page-numbers(href='#')
+												i.arrow.right
+						.col-xs-12.col-md-3.col-md-pull-9
+							.blog-pg_left
+								.blog-pg_search
+									h2 Search
+									form.blog-pg_search_form(role='search')
+										.input-group
+											input#srch-term.form-control(type='text', placeholder='Search', name='srch-term')
+											button(type='submit')
+								.blog-pg_posts
+									h2.section-title Popular News
+									.blog-pg_posts_block
+										.row
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-9.jpg') + ')')
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-8.jpg') + ')')
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-5.jpg') + ')')
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-6.jpg') + ')')
+											.col-sm-4
+												a.blog-pg_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-7.jpg') + ')')
+								.blog-pg_socials
+									h2 Social Media
+									ul.social-list
+										li
+											a(href="#") Instagram
+												span.fa.fa-instagram
+										li
+											a(href="#") Facebook
+												span.fa.fa-facebook
+										li
+											a(href="#") Twitter
+												span.fa.fa-twitter
+										li
+											a(href="#") YouTube
+												span.fa.fa-youtube-play
+								.blog-pg_archives
+									h2.section-title Archives
+									ul
+										li
+											a(href="#") August 2017
+										li
+											a(href="#") July 2017
+										li
+											a(href="#") May 2017
+										li
+											a(href="#") April 2017
+										li
+											a(href="#") December 2017
+										li
+											a(href="#") October 2017
+						
+		include ./templates/footer

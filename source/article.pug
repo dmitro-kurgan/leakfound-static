@@ -1,0 +1,123 @@
+extends ./templates/base
+
+block title
+	title Article
+block main
+	.wrapper.wrapper--article
+		include ./templates/header 
+		.content.content--article
+			section.breadcrumb
+				.container
+					h1 Blog
+					ul
+						li
+							a(href='./') Home
+						li
+							a(href='blog.html') Blog
+						li Integer quis massa lacus
+			section.article
+				.container
+					.row
+						.col-md-9
+							.article_right
+								.article_block
+									.article_news
+										.article_news_img(style='background-image: url(' + require('./components/images/photo-10.jpg') + ')')
+										.article_news_text
+											h3 Integer quis massa lacus
+											.article_news_data December 11.2017
+											p
+												|	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu vulputate elit. Quisque a eleifend velit. Nullam pellentesque ligula aliquam, tempus eros vitae, hendrerit tellus. Praesent volutpat rutrum tortor. Quisque sit amet justo semper, porta metus id, ultrices ante. Nulla sem sem, bibendum eu magna ac, ornare ultricies mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eget mollis est, in tincidunt nisl. Fusce bibendum nisl at congue tempus.
+												strong
+													|	Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												|	Nam vel volutpat nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et arcu pharetra, rutrum nulla sit amet, volutpat metus. Nunc sem arcu, varius laoreet vestibulum sed, mollis eget orci. least once in their life. They know...
+											ul
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+											p
+
+												|	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu vulputate elit. Quisque a eleifend velit. Nullam pellentesque ligula aliquam, tempus eros vitae, hendrerit tellus. Praesent volutpat rutrum tortor. Quisque sit amet justo semper, porta metus id, ultrices ante. Nulla sem sem, bibendum eu magna ac, ornare ultricies mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+												i
+													|	Nulla sem sem, bibendum eu magna ac, ornare ultricies mi 
+												|	Sed eget mollis est, in tincidunt nisl. Fusce bibendum nisl at congue tempus. Nam vel volutpat nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et arcu pharetra, rutrum nulla sit amet, volutpat metus. Nunc sem arcu, varius laoreet vestibulum sed, mollis eget orci. least once in their life. They know...
+											p
+
+												|	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu vulputate elit. Quisque a eleifend velit. Nullam pellentesque ligula aliquam, tempus eros vitae, hendrerit tellus. Praesent volutpat rutrum tortor. Quisque sit amet justo semper, porta metus id, ultrices ante. Nulla sem sem, bibendum eu magna ac, ornare ultricies mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+												i
+													|	Nulla sem sem, bibendum eu magna ac, ornare ultricies mi 
+												|	Sed eget mollis est, in tincidunt nisl. Fusce bibendum nisl at congue tempus. Nam vel volutpat nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et arcu pharetra, rutrum nulla sit amet, volutpat metus. Nunc sem arcu, varius laoreet vestibulum sed, mollis eget orci. least once in their life. They know...
+											ol
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+												li Nulla sem sem, bibendum eu magna ac, ornare ultricies mi
+											p
+
+												|	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu vulputate elit. Quisque a eleifend velit. Nullam pellentesque ligula aliquam, tempus eros vitae, hendrerit tellus. Praesent volutpat rutrum tortor. Quisque sit amet justo semper, porta metus id, ultrices ante. Nulla sem sem, bibendum eu magna ac, ornare ultricies mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+												i
+													|	Nulla sem sem, bibendum eu magna ac, ornare ultricies mi 
+												|	Sed eget mollis est, in tincidunt nisl. Fusce bibendum nisl at congue tempus. Nam vel volutpat nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla et arcu pharetra, rutrum nulla sit amet, volutpat metus. Nunc sem arcu, varius laoreet vestibulum sed, mollis eget orci. least once in their life. They know...
+									.article_pagination
+										.pagination-block
+											.pagination.loop-pagination
+												a.prev.page-numbers(href='#')
+													i.arrow.left
+												a.next.page-numbers(href='#')
+													i.arrow.right
+						.col-md-3
+							.article_left
+								.article_search
+									h2 Search
+									form.article_search_form(role='search')
+										.input-group
+											input#srch-term.form-control(type='text', placeholder='Search', name='srch-term')
+											button(type='submit')
+								.article_posts
+									h2.section-title Popular News
+									.article_posts_block
+										.row
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-9.jpg') + ')')
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-8.jpg') + ')')
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-5.jpg') + ')')
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-6.jpg') + ')')
+											.col-sm-4
+												a.article_posts_box(href="#", style='background-image: url(' + require('./components/images/photo-7.jpg') + ')')
+								.article_socials
+									h2 Social Media
+									ul.social-list
+										li
+											a(href="#") Instagram
+												span.fa.fa-instagram
+										li
+											a(href="#") Facebook
+												span.fa.fa-facebook
+										li
+											a(href="#") Twitter
+												span.fa.fa-twitter
+										li
+											a(href="#") YouTube
+												span.fa.fa-youtube-play
+								.article_archives
+									h2.section-title Archives
+									ul
+										li
+											a(href="#") August 2017
+										li
+											a(href="#") July 2017
+										li
+											a(href="#") May 2017
+										li
+											a(href="#") April 2017
+										li
+											a(href="#") December 2017
+										li
+											a(href="#") October 2017
+		include ./templates/footer

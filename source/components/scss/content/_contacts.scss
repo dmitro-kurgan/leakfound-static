@@ -1,0 +1,15 @@
+.content {
+	&--contacts {
+		.contacts {
+			margin: 0 0 60px 0;
+		}
+
+	}
+}
+.map {
+	margin-bottom: 0px;
+	&_block {
+		min-height: 505px;
+		// @include addPrefix(filter, grayscale(100%));
+	}
+}

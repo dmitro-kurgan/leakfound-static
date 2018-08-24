@@ -1,0 +1,158 @@
+.content {
+	&--wdr {
+		.contacts {
+			margin-top: 60px;
+			&_left {
+				border-right: none;
+			}
+			form {
+				max-width: 100%;
+				input {
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+.our-services {
+	h2 {
+		margin-bottom: 15px;
+	}
+	&_menu {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -20px;
+		@media #{$desctop} {
+			margin: 0 -10px;
+		}
+		@media #{$tablet} {
+			display: block;
+			margin: 0px;
+		}
+		li {
+			float: none;
+			position: relative;
+			width: 250px;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			border: 2px solid #1da6ad;
+			@media #{$desctop-lg} {
+				width: 220px;
+			}
+			@media #{$desctop-md} {
+				width: 180px;
+			}
+			@media #{$desctop} {
+				width: 150px;
+			}
+			@media #{$tablet} {
+				width: 30%;
+				margin-right: 5%;
+				margin-bottom: 20px;
+				&:nth-child(3n+3) {
+					margin-right: 0%;
+				}
+			}
+			@media #{$mobile} {
+				width: 250px;
+				margin: auto auto 20px;
+				display: block;
+				&:nth-child(3n+3) {
+					margin: auto auto 20px;
+				}
+			}
+			a {
+				height: 50px;
+				color: #1da6ad;
+				font-size: 16px;
+				padding: 0 10px;
+				border-radius: 0px;
+				letter-spacing: 1px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: $main_transition;
+				@media #{$desctop-lg} {
+					font-size: 14px;
+				}
+				@media #{$desctop-md} {
+					font-size: 11px;
+				}
+				@media #{$desctop} {
+					font-size: 10px;
+				}
+				@media #{$tablet} {
+					font-size: 12px;
+				}
+				@media #{$mobile} {
+					font-size: 16px;
+				}
+				&:hover {
+					background-color: #1da6ad;
+					color: $main_color;
+				}
+			}
+		}
+	}
+	&_content {
+		margin-top: 100px;
+		color: black;
+		@media #{$tablet} {
+			margin-top: 30px;
+		}
+		h2 {
+			margin-bottom: 0px;
+		}
+		p {
+			margin-top: 25px;
+			font: 400 normal 16px $Lora;
+			color: #7a7a7a;
+			line-height: 1.5;
+		}
+		h3 {
+			margin-top: 70px;
+			color: #424242;
+			font-size: 21px;
+		}
+	}
+	&_left, &_right {
+		margin-top: 55px;
+	}
+	&_right {
+		.our-services {
+			&_box {
+				margin: 0px 0px 0px auto;
+			}
+		}
+	}
+	&_box {
+		max-width: 750px;
+		span {
+			background-color: #f7f7f7;
+			padding: 30px 30px 20px 30px;
+			display: block;
+			@media #{$mobile} {
+				padding: 20px;
+			}
+			p {
+				margin-top: 15px;
+				color: #929292;
+				font: 400 normal 16px $Lora;
+			}
+		}
+	}
+	&_img {
+		min-height: 280px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&_name {
+		color: #424242;
+		font: 600 normal 21px $Lora;
+	}
+	&_text {
+		
+	}
+}

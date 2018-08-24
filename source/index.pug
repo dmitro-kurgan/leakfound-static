@@ -1,0 +1,322 @@
+extends ./templates/base
+
+block title
+	title Index
+
+block main
+	.wrapper
+		include ./templates/header 
+		//- .banner(style='background-image: url(' + require('./components/images/background.jpg') + ')')
+		.banner
+			.gradient
+			.banner_left
+				.banner_left_left
+				.banner_left_right
+			.banner_right
+				.banner_right_top
+					.img(style='background-image: url(' + require('./components/images/background-img-1.jpg') + ');position: absolute; height: inherit; width: 100%;')
+					.banner_right_left
+					.banner_right_right
+				.banner_right_bottom(style='background-image: url(' + require('./components/images/background-img-2.jpg') + ')')
+					.banner_right_left
+					.banner_right_right
+			.container.banner_container
+				.banner_inner
+					h1 WATER DAMAGE
+					h2 RESTORATION SERVICES
+					p.
+						Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. 
+					.banner_inner-btn
+						a(href="#", data-toggle="modal", data-target="#GetCall").btn Get Call in 30 seconds
+						a(href="#").btn get 30 min free attorney consultation
+					a(href="#services").scroll-down#scroll-down
+						div
+							span.dot
+						div
+							span.dot
+						div
+							span.dot
+		.content
+			section.services#services
+				.container
+					h2
+						span
+							| Our services
+						br
+						| our
+						i
+							| skills and technique
+					.services_block.clearfix
+						.services_left
+							.services_menu
+								ul.nav.nav-pills#nav-tab1
+									li.active
+										a(data-toggle='pill', href='#tab1') Water damage restoration
+									li
+										a(data-toggle='pill', href='#tab2') Leak Detection
+									li
+										a(data-toggle='pill', href='#tab3') Mold Removal/Remediation
+									li
+										a(data-toggle='pill', href='#tab4') Smoke Damage Restoration
+									li
+										a(data-toggle='pill', href='#tab5') Fire Damage Restoration/Soot Removal
+									li
+										a(data-toggle='pill', href='#tab6') Damage Repair Restoration
+						.services_right
+							.services_tab-content
+								.tab-content#nav-tab-content1
+									#tab1.tab-pane.fade.in.active
+										.slider.slick-services
+											div
+												.slick-services_box
+													.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+													.services_right_info-wrapper
+														.services_right_info
+															.services_right_inner
+																h5.
+																	Why consider us the best leak detection service in Encino, Los Angeles, California?
+																p.
+																	Water leaks can cause severe damage in a short amount of 
+																	time. For instance broken pipes, heavy rain, toilet overflows,
+																	sewer backups or any other water source. Getting quick,
+																	responsive attention from a professional will help mitigate 
+																	the damage to your home. Once your leak isтfound and fixed, 
+																	you may need Restoration-Drying Services, Mold 
+																	Remediation Work and/orтRepairs.
+														.services_right_btn
+															a.btn(href="#") Read more
+											div
+												.slick-services_box
+													.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+													.services_right_info-wrapper
+														.services_right_info
+															.services_right_inner
+																h5.
+																	Why consider us the best leak detection service in Encino, Los Angeles, California?
+																p.
+																	Water leaks can cause severe damage in a short amount of 
+																	time. For instance broken pipes, heavy rain, toilet overflows,
+																	sewer backups or any other water source. Getting quick,
+																	responsive attention from a professional will help mitigate 
+																	the damage to your home. Once your leak isтfound and fixed, 
+																	you may need Restoration-Drying Services, Mold 
+																	Remediation Work and/orтRepairs.
+														.services_right_btn
+															a.btn(href="#") Read more
+										.controls
+											.controls_current
+											.controls_total
+									#tab2.tab-pane.fade
+										.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.services_right_info-wrapper
+											.services_right_info
+												.services_right_inner
+													h5.
+														Why consider us the best leak detection service in Encino, Los Angeles, California?
+													p.
+														Water leaks can cause severe damage in a short amount of 
+														time. For instance broken pipes, heavy rain, toilet overflows,
+														sewer backups or any other water source. Getting quick,
+														responsive attention from a professional will help mitigate 
+														the damage to your home. Once your leak isтfound and fixed, 
+														you may need Restoration-Drying Services, Mold 
+														Remediation Work and/orтRepairs.
+											.services_right_btn
+												a.btn(href="#") Read more
+									#tab3.tab-pane.fade
+										.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.services_right_info-wrapper
+											.services_right_info
+												.services_right_inner
+													h5.
+														Why consider us the best leak detection service in Encino, Los Angeles, California?
+													p.
+														Water leaks can cause severe damage in a short amount of 
+														time. For instance broken pipes, heavy rain, toilet overflows,
+														sewer backups or any other water source. Getting quick,
+														responsive attention from a professional will help mitigate 
+														the damage to your home. Once your leak isтfound and fixed, 
+														you may need Restoration-Drying Services, Mold 
+														Remediation Work and/orтRepairs.
+											.services_right_btn
+												a.btn(href="#") Read more
+									#tab4.tab-pane.fade
+										.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.services_right_info-wrapper
+											.services_right_info
+												.services_right_inner
+													h5.
+														Why consider us the best leak detection service in Encino, Los Angeles, California?
+													p.
+														Water leaks can cause severe damage in a short amount of 
+														time. For instance broken pipes, heavy rain, toilet overflows,
+														sewer backups or any other water source. Getting quick,
+														responsive attention from a professional will help mitigate 
+														the damage to your home. Once your leak isтfound and fixed, 
+														you may need Restoration-Drying Services, Mold 
+														Remediation Work and/orтRepairs.
+											.services_right_btn
+												a.btn(href="#") Read more
+									#tab5.tab-pane.fade
+										.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.services_right_info-wrapper
+											.services_right_info
+												.services_right_inner
+													h5.
+														Why consider us the best leak detection service in Encino, Los Angeles, California?
+													p.
+														Water leaks can cause severe damage in a short amount of 
+														time. For instance broken pipes, heavy rain, toilet overflows,
+														sewer backups or any other water source. Getting quick,
+														responsive attention from a professional will help mitigate 
+														the damage to your home. Once your leak isтfound and fixed, 
+														you may need Restoration-Drying Services, Mold 
+														Remediation Work and/orтRepairs.
+											.services_right_btn
+												a.btn(href="#") Read more
+									#tab6.tab-pane.fade
+										.services_right_img(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.services_right_info-wrapper
+											.services_right_info
+												.services_right_inner
+													h5.
+														Why consider us the best leak detection service in Encino, Los Angeles, California?
+													p.
+														Water leaks can cause severe damage in a short amount of 
+														time. For instance broken pipes, heavy rain, toilet overflows,
+														sewer backups or any other water source. Getting quick,
+														responsive attention from a professional will help mitigate 
+														the damage to your home. Once your leak isтfound and fixed, 
+														you may need Restoration-Drying Services, Mold 
+														Remediation Work and/orтRepairs.
+											.services_right_btn
+												a.btn(href="#") Read more
+			section.process
+				.container
+					h2 Our Water Damage
+						br
+						i
+							|  Restoration Process:
+						br
+						span process
+					.process_block
+						.process_list
+							ul.clearfix
+								li
+									div
+										p.
+											Free, No Obligation Inspection
+										span 01
+								li
+									div
+										span 02
+										p.
+											Water Extraction
+								li
+									div
+										p.
+											Pack out or Content manipulation
+										span 03
+								li
+									div
+										span 04
+										p.
+											Mold and Odor removal
+								li
+									div
+										p.
+											Drying out all affected areas
+										span 05
+								li
+									div
+										span 06
+										p.
+											Repair and Reconstruction
+								li
+									div
+										p.
+											Pack In
+										span 07
+						a(href="#", data-toggle="modal", data-target="#GetCall").btn Get Call in 30 seconds
+			include ./templates/stats
+			section.choose-us
+				.container
+					h2 
+						span
+							| Why choose us?
+						br
+						//- | best 
+						i
+							| Water Damage Restoration
+					.choose-us_block.clearfix
+						.choose-us_left
+							.choose-us_inner
+								.choose-us_menu
+									ul.nav.nav-pills#nav-tab2
+										li.active
+											a(data-toggle='pill', href='#technology') technology
+										li
+											a(data-toggle='pill', href='#service') Service
+										li
+											a(data-toggle='pill', href='#professional') Professional
+										li
+											a(data-toggle='pill', href='#free') Free
+										li
+											a(href='#') More...
+								.choose-us_tab-content
+									.tab-content#nav-tab-content2
+										#technology.tab-pane.fade.in.active
+											h4.
+												We are using latest technology & superior equipment – drying pads, inject dry etc.
+											p.
+												We are using latest technology & superior equipment – drying pads, inject dry etc. New equipment = better results for clients State of art drying methodsиsave clients’ money, reduce cost for insurer.
+											a(href="#").btn Read more
+										#service.tab-pane.fade
+											h4.
+												We are using latest technology & superior equipment – drying pads, inject dry etc.
+											p.
+												We are using latest technology & superior equipment – drying pads, inject dry etc. New equipment = better results for clients State of art drying methodsиsave clients’ money, reduce cost for insurer.
+											a(href="#").btn Read more
+										#professional.tab-pane.fade
+											h4.
+												We are using latest technology & superior equipment – drying pads, inject dry etc.
+											p.
+												We are using latest technology & superior equipment – drying pads, inject dry etc. New equipment = better results for clients State of art drying methodsиsave clients’ money, reduce cost for insurer.
+											a(href="#").btn Read more
+										#free.tab-pane.fade
+											h4.
+												We are using latest technology & superior equipment – drying pads, inject dry etc.
+											p.
+												We are using latest technology & superior equipment – drying pads, inject dry etc. New equipment = better results for clients State of art drying methodsиsave clients’ money, reduce cost for insurer.
+											a(href="#").btn Read more
+						.choose-us_right
+							.choose-us_video
+								a(href="#", style='background-image: url(' + require('./components/images/video-img.png') + ')', data-toggle="modal", data-target="#VideoModal").video
+								.guarantee
+									h5.
+										LeakFound provides a Full Service Guarantee!
+									p.
+										Once your leak is found and fixed, you may need Restoration-Drying Services, Mold Remediation Work and/or Repairs. LeakFOUND provides a certified LeakFOUND Professional to fix your problem from beginning to end.
+			include ./templates/yelp
+			include ./templates/comments
+			include ./templates/news
+			include ./templates/info
+			include ./templates/companies
+		include ./templates/footer
+		include ./templates/call
+		include ./templates/video
+		a(href="tel:+14704483918").btn.mobile-btn call now 470-448-3918
+			//- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+			//- script(src='https://rawgit.com/alvarotrigo/fullPage.js/dev/vendors/scrolloverflow.js')
+			//- script(src='https://rawgit.com/alvarotrigo/fullPage.js/dev/jquery.fullPage.js')
+			//- script.
+			//- 	$(document).ready(function() {
+			//- 	    $('#fullpage').fullpage({
+			//- 	        scrollBar: true,
+			//- 			scrollOverflow: true,
+			//- 			scrollOverflowReset: true,
+			//- 	        responsiveWidth: 992,
+			//- 	        responsiveHeight: 680,
+			//- 	        scrollingSpeed: 900
+			//- 	    });
+			//- 	});

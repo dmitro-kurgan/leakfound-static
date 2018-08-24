@@ -1,0 +1,258 @@
+.content {
+	&--services, &--wdr, &--contacts, &--aboutus, &--blog, &--article {
+		padding-top: 68px;
+	}
+	&--services {
+		// --------MAP--------
+		.map {
+			margin-bottom: 90px;
+			&_block {
+				min-height: 800px;
+				position: relative;
+			}
+		}
+		// ----CHOSE-US------
+		.choose-us {
+			margin-top: 0px;
+			h2 {
+				text-align: center;
+				line-height: 1.25;
+			}
+			&_block {
+				.btn {
+					width: 197px;
+					height: 49px;
+					margin: auto;
+				}
+			}
+			&_box {
+				display: block;
+				max-width: 580px;
+				margin: auto;
+				@media #{$tablet} {
+					max-width: 100%;
+					display: inline-block;
+				}
+				&:hover {
+					.choose-us {
+						&_box {
+							&_right {
+								box-shadow: inset 0px 0px 0px 2px #008790;
+								@media #{$mobile} {
+									box-shadow: none;
+								}
+							}
+						}
+						&_layout {
+							background-color: rgba(29, 165, 173, 0.74);
+							@media #{$mobile} {
+								background-color: rgba(0, 0, 0, 0.5);
+							}
+						}
+					}
+				}
+				&_left, &_right {
+					min-height: 183px;
+					float: left;
+					@media #{$desctop-md} {
+						min-height: 170px;
+					}
+					@media #{$desctop} {
+						min-height: 140px;
+					}
+					@media #{$mobile} {
+						float: none;
+					}
+				}
+				&_left {
+					width: 170px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					text-align: center;
+					@media #{$desctop-md} {
+						width: 160px;
+					}
+					@media #{$desctop} {
+						width: 130px;
+					}
+					@media #{$mobile} {
+						margin: auto;
+					}
+				}
+				&_right {
+					width: 410px;
+					box-shadow: inset 0px 0px 0px 2px #dddddd;
+					padding: 25px 40px;
+					text-align: left;
+					transition: $main_transition;
+					@media #{$desctop-md} {
+						width: 395px;
+					}
+					@media #{$desctop} {
+						width: 325px;
+						padding: 20px 25px;
+					}
+					@media #{$mobile} {
+						width: 100%;
+						box-shadow: none;
+					}
+				}
+			}
+			&_layout {
+				background-color: rgba(0, 0, 0, 0.5);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: inherit;
+				transition: $main_transition;
+			}
+			&_img {
+				min-height: 50px;
+				background-size: cover;
+				background-image: url(../images/choose-us-sprite-2.png);
+				background-repeat: no-repeat;
+				margin: auto;
+				&--water {
+					width: 40px;
+					height: 40px;
+					background-position: -5px;
+				}
+				&--smoke {
+					width: 35px;
+					height: 49px;
+					background-position: -59px;
+				}
+				&--leak {
+					width: 49px;
+					height: 40px;
+					background-position: -115px;
+				}
+				&--fire {
+					width: 43px;
+					height: 35px;
+					background-position: -186px;
+				}
+				&--mold {
+					width: 51px;
+					height: 45px;
+					background-position: -241px;
+				}
+				&--repair {
+					width: 49px;
+					height: 49px;
+					background-position: -306px;
+				}
+			}
+			&_name {
+				font-size: 19px;
+				margin-top: 15px;
+				@media #{$desctop} {
+					font-size: 14px;
+					margin-top: 10px;
+				}
+			}
+			&_txt {
+				color: #424242;
+				font: 300 normal 16px $Lora;
+				@media #{$desctop} {
+					font-size: 12px;
+				}
+			}
+			ul {
+				li {
+					margin-bottom: 50px;
+					@media #{$tablet} {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+// --------MAP-------
+.map {
+	position: relative;
+	min-height: 700px;
+	@mixin absolute($top,$right,$bottom,$left) {
+		position: absolute;
+		top: $top;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+	}
+	h2 {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	&_block, &_inner {
+	  display: block;
+	  background: #000;
+	  @include absolute(0,0,0,0);
+	  z-index: 0;
+	}
+	&_inner {
+		z-index: 10;
+		background: rgba(255,255,255,0);
+		// background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.51) 51%, rgba(255,255,255,0.71) 71%, rgba(255,255,255,1) 100%);
+		// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,0.5)), color-stop(51%, rgba(255,255,255,0.51)), color-stop(71%, rgba(255,255,255,0.71)), color-stop(100%, rgba(255,255,255,1)));
+		// background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.51) 51%, rgba(255,255,255,0.71) 71%, rgba(255,255,255,1) 100%);
+		// background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.51) 51%, rgba(255,255,255,0.71) 71%, rgba(255,255,255,1) 100%);
+		// background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.51) 51%, rgba(255,255,255,0.71) 71%, rgba(255,255,255,1) 100%);
+		// background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.51) 51%, rgba(255,255,255,0.71) 71%, rgba(255,255,255,1) 100%);
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffffff+81,ffffff+92,ffffff+100&0+0,1+100 */
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(255,255,255,0.81) 81%, rgba(255,255,255,0.92) 92%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(255,255,255,0.81) 81%,rgba(255,255,255,0.92) 92%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(255,255,255,0.81) 81%,rgba(255,255,255,0.92) 92%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+		padding: 30px;
+		pointer-events: none;
+	}
+	&_locations {
+		position: absolute;
+		z-index: 12;
+		bottom: 25px;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		pointer-events: none;
+		ul {
+			li {
+				display: inline-block;
+				margin-right: 135px;
+				@media #{$mobile} {
+					margin-right: 20px;
+				}
+				&:last-child {
+					margin-right: 0px;
+				}
+				span {
+					display: block;
+					width: 41px;
+					height: 41px;
+					margin: auto;
+					background: url(../images/location.png)no-repeat center;
+					background-size: cover;
+				}
+				a {
+					// pointer-events: none;
+					margin-top: 10px;
+					display: inline-block;
+					color: #424242;
+					font-size: 18px;
+					text-transform: uppercase;
+					transition: $main_transition;
+					@media #{$mobile} {
+						font-size: 14px;
+					}
+					&:hover {
+						color: #008790;
+					}
+				}
+			}
+		}
+	}
+}

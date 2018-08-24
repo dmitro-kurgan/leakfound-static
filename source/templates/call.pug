@@ -1,0 +1,33 @@
+#GetCall.modal.fade(role='dialog')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal')
+        h6
+          span
+            | call back
+          br
+          | get call 
+          i
+            | in 30 seconds
+      .modal-body
+        form
+          .form-group
+            label(for='name') Name
+            input.form-control#name(type='text', name='name', placeholder='Name', required)
+          .form-group
+            label(for='tel') Your phone number
+            input.form-control#tel(type='text', name='tel', placeholder='Phone', required)
+          button(type='submit').btn get call in 30 seconds
+#SuccessCall.modal.fade(role='dialog')
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal')
+      .modal-body
+        img(src=require('../components/images/success.png'))
+        h6 your application is successful
+        p.
+          Thank you for contacting our company. In the nearest 30 seconds we will contact you!
+        .modal-footer
+          button.btn(type='button', data-dismiss='modal') Close

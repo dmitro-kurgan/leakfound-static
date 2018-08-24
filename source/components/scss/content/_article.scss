@@ -1,0 +1,167 @@
+.content {
+	&--article {
+		.article {
+			&_right {
+				margin-left: 0px;
+				margin-right: 60px;
+				@media #{$desctop-md} {
+					margin-right: 40px;
+				}
+				@media #{$tablet} {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
+.article {
+	&_news {
+		margin-top: 35px;
+		&_img {
+			min-height: 630px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			@media #{$desctop-md} {
+				min-height: 480px;
+			}
+			@media #{$desctop} {
+				min-height: 380px;
+			}
+			@media #{$mobile} {
+				min-height: 260px;
+			}
+		}
+		&_text {
+			padding-bottom: 75px;
+			@media #{$mobile} {
+				padding-bottom: 35px;
+			}
+			h3 {
+				color: #474747;
+				font-size: 39px;
+				margin-top: 40px;
+
+				@media #{$mobile} {
+					font-size: 24px;
+					margin-top: 20px;
+				}
+			}
+			p {
+				display: inline-block;
+				// color: #bdbdbd;
+				color: #939292;
+				font: 400 normal 22px $Lora;
+				margin-top: 12px;
+				// &:first-child {
+
+				// }
+				@media #{$mobile} {
+					margin-top: 15px;
+					font-size: 18px;
+				}
+			}
+			p + p {
+				// margin-top: 12px;
+			}
+			i {
+				font-weight: 300;
+			}
+			strong {
+				font-weight: 700;
+			}
+			ul, ol {
+				margin-top: 25px;
+				margin-bottom: 13px;
+				margin-left: 75px;
+				@media #{$mobile} {
+					margin-left: 20px;
+				}
+				li {
+					// color: #bdbdbd;
+					color: #939292;
+					font: 400 normal 22px $Lora;
+					@media #{$mobile} {
+						font-size: 18px;
+					}
+				}
+			}
+			ul {
+				list-style: disc;
+			}
+			ol {
+				list-style-type: decimal;
+			}
+		}
+		&_data {
+			font-size: 16px;
+			color: #868787;
+			padding: 15px 0 30px 0;
+			border-bottom: 1px solid #e3e3e3;
+			margin-bottom: 18px;
+			@media #{$mobile} {
+				padding: 10px 0 20px 0;
+			}
+		}
+	}
+	&_archives {
+		@media #{$tablet} {
+			margin-bottom: 50px;
+		}	
+	}
+	&_pagination {
+		padding: 15px 0;
+		border: solid #e3e3e3;
+		border-width: 1px 0 1px 0;
+		margin-bottom: 90px;
+		text-align: right;
+		@media #{$tablet} {
+			text-align: center;
+		}
+		.pagination {
+			margin: 0px;
+		}
+		.prev, .next {
+			background-color: #eeeeee;
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+			display: inline-block;
+			position: relative;
+			transition: $main_transition;
+			&:hover {
+				background-color: #d8d8d8;
+			}
+		}
+		.arrow {
+			border: solid #b1b1b1;
+			border-width: 0px 2px 2px 0px;
+			width: 13px;
+			height: 13px;
+			display: inline-block;
+			position: absolute;
+		    top: calc(50% - 8px);
+			&:before {
+				content: '';
+				position: absolute;
+				top: 4px;
+    			left: -6px;
+				width: 22px;
+				height: 2px;
+				background-color: #b1b1b1;
+				@include addPrefix(transform, rotate(45deg));
+			}
+		}
+		.left {
+			@include addPrefix(transform, rotate(-225deg));
+			left: 13px;
+		}
+		.right {
+			@include addPrefix(transform, rotate(-45deg));
+			right: 13px;
+		}
+		.prev {
+			margin-right: 20px;
+		}
+	}
+}

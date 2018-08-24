@@ -1,0 +1,116 @@
+extends ./templates/base
+
+block title
+	title About us
+block main
+	.wrapper.wrapper--about-us
+		include ./templates/header
+		.content.content--aboutus
+			section.breadcrumb
+				.container
+					h1 About us
+					ul
+						li
+							a(href='./') Home
+						li About us
+			section.aboutus-banner
+				.container
+					.row
+						.col-sm-6
+							.aboutus-banner_left
+								h2 
+									span
+										| About us
+									br
+									| water 
+									i
+										| damage
+									br
+									i
+										| restoration
+								p.
+									Water damage is a problem that everyone who owns a property has faced at least once in their life. They know that water damage restoration is not an easy procedure. Happily, those who have already dealt with fixing a house or a building after damage know what to do and how to react. Unfortunately, a lot of people miss the main point of the problem. At this point you have to make decisions quickly and with no delays. Especially if your house has become a flood victim, and the risk of serious consequences is increasing.
+								p.
+									There is a wide variety of possible causes of the water damage. Among them are heavy rains, snow melting, equipment failure, broken pipes, toilets, and leaking roofs. In addition, water damage is a common problem for basements. Sometimes people accidentally cause water damage by forgetting to close the tap. It may sound absurd, and it is so. To their regret, those people get thousands of dollars bills at the end of the damage removal. That’s how pricy your inattention can cost.
+								a(href="#").read-more Read more
+						.col-sm-6
+							.aboutus-banner_right
+								.aboutus-banner_box
+									.aboutus-banner_img(style='background-image: url(' + require('./components/images/photo-6.jpg') + ')')
+			include ./templates/stats
+			section.choose-us#choose-us
+				.container
+					h2 
+						span
+							| Why choose us?
+						br
+						| best 
+						i
+							| Water Damage Restoration
+					.choose-us_block
+						ul.row
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--free
+										h3.choose-us_box_name Free
+										p.choose-us_box_txt.
+											FREE, No-Obligation Inspection with infrared camera and moisture detector.
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--service
+										h3.choose-us_box_name Service
+										p.choose-us_box_txt.
+											FREE, No-Obligation Inspection with infrared camera and moisture detector.
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--license
+										p.choose-us_box_txt.
+											IICRC certified, General Contractor License, Bond, Workers Comp & Liability Insurance
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--free2
+										h3.choose-us_box_name Free
+										p.choose-us_box_txt.
+											5 Stars on Yelp.We are taking care of client from A to Z Deal with restoration of the house, also
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--tech
+										h3.choose-us_box_name Technology
+										p.choose-us_box_txt.
+											We are using latest technology & superior equipment – drying pads, inject dry etc. New equipment = better results for clients
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--resp
+										h3.choose-us_box_name quick response
+										p.choose-us_box_txt.
+											Quick Response – local (San Fernando Valley) within 30 min, LA County within 1.5 hours, Southern CA within 2.5 hrs.
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--comp
+										h3.choose-us_box_name insurance companies
+										p.choose-us_box_txt.
+											We work with all insurance companies Not insurance vendor – not a problem, work per insurer billing per Xactimate (insurer’s estimating program)
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--pro
+										h3.choose-us_box_name professional
+										p.choose-us_box_txt.
+											We have professional and trained workers. Multilingual staff
+							li.col-md-4.col-sm-6
+								.choose-us_box
+									.choose-us_box_text
+										.choose-us_img.choose-us_img--disaster
+										h3.choose-us_box_name disasters
+										p.choose-us_box_txt.
+											We help property owners with all disasters  Water/Fire Restoration, Mold Remediation, Vandalism, Crime Scene, Natural Disasters, Former Lovers/Mistresses, Any Type of Illness
+			include ./templates/comments
+			include ./templates/companies
+		include ./templates/footer

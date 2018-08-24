@@ -1,0 +1,19 @@
+extends ./templates/base
+
+block title
+	title Contacts
+block main
+	.wrapper.wrapper--contacts
+		include ./templates/header 
+		.content.content--contacts
+			section.breadcrumb
+				.container
+					h1 Contacts
+					ul
+						li
+							a(href='./') Home
+						li Contacts
+			include ./templates/info
+			section.map
+				.map_block#map
+		include ./templates/footer

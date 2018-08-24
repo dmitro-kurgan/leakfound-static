@@ -1,0 +1,195 @@
+extends ./templates/base
+
+block title
+	title Water Damage Restoration
+block main
+	.wrapper.wrapper--wdr
+		include ./templates/header 
+		.content.content--wdr
+			section.breadcrumb
+				.container
+					h1 Services
+					ul
+						li
+							a(href='./') Home
+						li
+							a(href='services.html') Services
+						li Water Damage Restoration
+			section.our-services
+				.container
+					h2 
+						span
+							| choose services
+						br
+						| our services
+					.our-services_block.clearfix
+						.our-services_menu.clearfix
+							li
+								a(href='#') Water damage restoration
+							li
+								a(href='#') Leak Detection
+							li
+								a(href='#') Mold Removal/Remediation
+							li
+								a(href='#') Smoke Damage Restoration
+							li
+								a(href='#') Fire Damage Restoration/Soot Removal
+							li
+								a(href='#') Damage Repair Restoration
+						.our-services_content
+							h2 
+								span
+									| Water damage restoration
+								br
+								i
+									| leak 
+								| detection
+							p.
+								Immediate elimination of pressure leaks in concrete, stone, brick structures is a prerequisite for the security of your home. A leak could pose a serious threat to the integrity of your home and your health. We will help you solve this problem by working with leak detection experts who use only the most advanced technologies that make it possible to determine the source of the leak quickly and accurately. Our technologies make it possible to repair the damage with maximum reliability.
+							p.
+								People all around the world (including the U.S., and particularly Encino, LA, CA) are faced with the problem of water leaks more and more often. The main reason for that is the fact of them being not attentive enough to their own houses and systems inside their homes which contain water.Of course, these systems, which are spread throughout the house or building, are very useful as they represent the safest and most economic way to transport water.
+							.row
+								.col-sm-6
+									.our-services_left
+										.our-services_box
+											.our-services_img(style='background-image: url(' + require('./components/images/photo-4.jpg') + ')')
+											span
+												h4.our-services_name Integer tincidunt convallis
+												p.our-services_text.
+													Lorem ipsum dolor sit amet, consectetur adipiscing  at aliquam lectus. Proin dictum dapibus eo, eu  dui. In aliquet magna ut ante congue, quis rutrum
+								.col-sm-6
+									.our-services_right
+										.our-services_box
+											.our-services_img(style='background-image: url(' + require('./components/images/photo-5.jpg') + ')')
+											span
+												h4.our-services_name Integer tincidunt convallis
+												p.our-services_text.
+													Lorem ipsum dolor sit amet, consectetur adipiscing  at aliquam lectus. Proin dictumdapibus eo, eu  dui. In aliquet magna ut ante congue, quis rutrum
+							h3.
+								Why consider us the best leak detection service in Encino, Los Angeles, California?
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor mauris. Proin elementum ut metus in tempus. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id accumsan ipsum, ac tempor ligula. Curabitur ut libero sed dolor fermentum accumsan vitae id sapien. Maecenas nec pulvinar nisi. Curabitur malesuada dictum ultricies. Nunc tempor ante id vulputate pretium. Aenean consequat tellus vitae odio dignissim, facilisis porta nisl malesuada. Integer luctus porttitor pulvinar.
+							p.
+								Phasellus gravida odio vel eros bibendum faucibus. Vestibulum in massa nulla. In bibendum dictum lorem nec rhoncus. Fusce dictum nisl ac arcu pellentesque, id eleifend metus porta.  Praesent porta rhoncus dui eget varius. Nunc porttitor eros nec magna sodales, pulvinar dignissim libero lobortis. Phasellus iaculis urna et fringilla mollis. Curabitur congue malesuada libero. Donec aliquet neque leo, eu malesuada velit dapibus ut. Vivamus in fringilla arcu, nec porta magna.
+						//- .our-services_menu
+						//- 	.row
+						//- 		ul.nav.nav-pills
+						//- 			li.active
+						//- 				a(data-toggle='pill', href='#tab1') 
+						//- 					p Water damage restoration
+						//- 			li
+						//- 				a(data-toggle='pill', href='#tab2')
+						//- 					p Leak Detection
+						//- 			li
+						//- 				a(data-toggle='pill', href='#tab3')
+						//- 					p Mold Removal/Remediation
+						//- 			li
+						//- 				a(data-toggle='pill', href='#tab4')
+						//- 					p Smoke Damage Restoration
+						//- 			li
+						//- 				a(data-toggle='pill', href='#tab5')
+						//- 					p Fire Damage Restoration/Soot Removal
+						//- 			li
+						//- 				a(data-toggle='pill', href='#tab6')
+						//- 					p Damage Repair Restoration
+						//- .our-services_tab-content
+						//- 	.tab-content
+						//- 		#tab1.tab-pane.fade.in.active
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+						//- 			p.
+						//- 				Immediate elimination of pressure leaks in concrete, stone, brick structures is a prerequisite for the security of your home. A leak could pose a serious threat to the integrity of your home and your health. We will help you solve this problem by working with leak detection experts who use only the most advanced technologies that make it possible to determine the source of the leak quickly and accurately. Our technologies make it possible to repair the damage with maximum reliability.
+						//- 			p.
+						//- 				People all around the world (including the U.S., and particularly Encino, LA, CA) are faced with the problem of water leaks more and more often. The main reason for that is the fact of them being not attentive enough to their own houses and systems inside their homes which contain water.Of course, these systems, which are spread throughout the house or building, are very useful as they represent the safest and most economic way to transport water.
+						//- 			.row
+						//- 				.col-sm-6
+						//- 					.our-services_left
+						//- 						.our-services_box
+						//- 							.our-services_img(style='background-image: url(' + require('./components/images/photo-4.jpg') + ')')
+						//- 							span
+						//- 								h4.our-services_name Integer tincidunt convallis
+						//- 								p.our-services_text.
+						//- 									Lorem ipsum dolor sit amet, consectetur adipiscing  at aliquam lectus. Proin dictum dapibus eo, eu  dui. In aliquet magna ut ante congue, quis rutrum
+						//- 				.col-sm-6
+						//- 					.our-services_right
+						//- 						.our-services_box
+						//- 							.our-services_img(style='background-image: url(' + require('./components/images/photo-5.jpg') + ')')
+						//- 							span
+						//- 								h4.our-services_name Integer tincidunt convallis
+						//- 								p.our-services_text.
+						//- 									Lorem ipsum dolor sit amet, consectetur adipiscing  at aliquam lectus. Proin dictumdapibus eo, eu  dui. In aliquet magna ut ante congue, quis rutrum
+						//- 			h3.
+						//- 				Why consider us the best leak detection service in Encino, Los Angeles, California?
+						//- 			p.
+						//- 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor mauris. Proin elementum ut metus in tempus. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed id accumsan ipsum, ac tempor ligula. Curabitur ut libero sed dolor fermentum accumsan vitae id sapien. Maecenas nec pulvinar nisi. Curabitur malesuada dictum ultricies. Nunc tempor ante id vulputate pretium. Aenean consequat tellus vitae odio dignissim, facilisis porta nisl malesuada. Integer luctus porttitor pulvinar.
+						//- 			p.
+						//- 				Phasellus gravida odio vel eros bibendum faucibus. Vestibulum in massa nulla. In bibendum dictum lorem nec rhoncus. Fusce dictum nisl ac arcu pellentesque, id eleifend metus porta.  Praesent porta rhoncus dui eget varius. Nunc porttitor eros nec magna sodales, pulvinar dignissim libero lobortis. Phasellus iaculis urna et fringilla mollis. Curabitur congue malesuada libero. Donec aliquet neque leo, eu malesuada velit dapibus ut. Vivamus in fringilla arcu, nec porta magna.
+						//- 		#tab2.tab-pane.fade
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+						//- 		#tab3.tab-pane.fade
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+						//- 		#tab4.tab-pane.fade
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+						//- 		#tab5.tab-pane.fade
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+						//- 		#tab6.tab-pane.fade
+						//- 			h2 
+						//- 				span
+						//- 					| Water damage restoration
+						//- 				br
+						//- 				i
+						//- 					| leak 
+						//- 				| detection
+			section.contacts
+				.container
+					.contacts_left
+						h2 
+							span
+								| contact us
+							br
+							| Send a message
+						form
+							.row
+								.form-group.col-sm-6
+									label(for='name') Name
+									input.form-control#name(type='text', name='name', placeholder='Name', required)
+								.form-group.col-sm-6
+									label(for='email') E-mail
+									input.form-control#email(type='text', name='email', placeholder='E-mail', required)
+							.form-group
+								label(for='message') Message
+								textarea.form-control#message(type='text', name='name', placeholder='Message', rows='8', required)
+							button(type='submit').btn Send a message
+			include ./templates/yelp
+			include ./templates/comments
+			include ./templates/news
+		include ./templates/footer

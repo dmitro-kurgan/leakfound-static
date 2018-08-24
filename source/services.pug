@@ -1,0 +1,123 @@
+extends ./templates/base
+
+block title
+	title Services
+block main
+	.wrapper.wrapper--services
+		include ./templates/header
+		.content.content--services
+			section.breadcrumb
+				.container
+					h1 Services
+					ul
+						li
+							a(href='./') Home
+						li Services
+			section.choose-us
+				.container
+					h2
+						span
+							| Why Choose us?
+						br
+						| Best 
+						i
+							| Water 
+						| Damage
+						br 
+						| Restoration
+					.choose-us_block
+						ul.row
+							li.col-md-6
+								a(href="wdr.html").choose-us_box.clearfix#link1
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--water
+												p.choose-us_name Water Damage Restoration
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+							li.col-md-6
+								a(href="#").choose-us_box.clearfix
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--smoke
+												p.choose-us_name Smoke Damage Restoration
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+							li.col-md-6
+								a(href="#").choose-us_box.clearfix
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--leak
+												p.choose-us_name Leak Detection
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+							li.col-md-6
+								a(href="#").choose-us_box.clearfix
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--fire
+												p.choose-us_name Fire Damage
+													br
+													| Restoratio / Soot
+													br
+													| Removal
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+							li.col-md-6
+								a(href="#").choose-us_box.clearfix
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--mold
+												p.choose-us_name Mold Removal
+													br
+													| Remediation
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+							li.col-md-6
+								a(href="#").choose-us_box.clearfix
+									.choose-us_box_left(style='background-image: url(' + require('./components/images/photo-3.jpg') + ')')
+										.choose-us_layout
+											span
+												.choose-us_img.choose-us_img--repair
+												p.choose-us_name Damage Repair
+													br
+													| Restoration
+									.choose-us_box_right
+										p.choose-us_txt.
+											Water leaks can cause severe damage in a short amount of time. For instance broken pipes, heavy rain, toilet overflows, sewer backups or any other water source. Getting quick, responsive attention from a professional will help mitigate the damage to your home.
+						a(href="#", data-toggle="modal", data-target="#GetCall").btn Contact us
+			section.map
+				h2 
+					span where we
+					br
+					| Our service 
+					i
+						| areas
+				.map_block#map2
+				.map_inner
+					.map_locations
+						ul 
+							li
+								span
+								a(href="#") Los Angeles
+							li
+								span
+								a(href="#") Ventura
+							li
+								span
+								a(href="#") Orange
+			include ./templates/yelp
+			include ./templates/comments
+			include ./templates/news
+		include ./templates/footer
+		include ./templates/call
